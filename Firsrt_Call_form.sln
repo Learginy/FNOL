@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firsrt_Call_form", "Firsrt_Call_form\Firsrt_Call_form.csproj", "{F3EEBC11-AA4F-4546-821A-4BB4F4A2554B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3EEBC11-AA4F-4546-821A-4BB4F4A2554B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EEBC11-AA4F-4546-821A-4BB4F4A2554B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EEBC11-AA4F-4546-821A-4BB4F4A2554B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EEBC11-AA4F-4546-821A-4BB4F4A2554B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDD77CF6-1A82-48BA-91FA-46763B46B757}
+	EndGlobalSection
+EndGlobal

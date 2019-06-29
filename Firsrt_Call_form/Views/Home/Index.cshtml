@@ -1,0 +1,88 @@
+﻿@model FirstCallModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Форма первого обращения</h1>
+<form action="/home/sendtocrm" method="post">
+    <div class="form-group">
+        <label>Введите симптомы</label>
+        <select class="form-control" asp-for="SimpthomIds" asp-items="ViewBag.AllSimpthoms"></select>
+    </div>
+    <div class="form-group">
+        <label>Other симптомы</label>
+        <input type="text" asp-for="AnotherSimpthoms" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="checkbox" class="form-check-input" asp-for="FirstTimeCall" id="FirstTimeCall">
+        <label class="form-check-label" for="FirstTimeCall">Is first call</label>
+    </div>
+
+    <div class="form-group">
+        <label>Контактные данные</label>
+        <table>
+            <tr>
+                <td><input type="text" asp-for="Contacts" class="form-control" placeholder="Phone" /></td>
+                <td><input type="text" asp-for="Contacts" class="form-control" placeholder="Office" /></td>
+                <td><input type="text" asp-for="Contacts" class="form-control" placeholder="Mobile" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <label>Как можно к вам обращаться?</label>
+        <input type="text" asp-for="CallingPerson" class="form-control" placeholder="Calling Person" />
+    </div>
+
+    <div class="form-group">
+        <label>Кому требуется помощь</label>
+        <table>
+            <tr>
+                <td> <input type="text" asp-for="RelToIns" class="form-control" placeholder="Relation to insured" /></td>
+                <td> <input type="text" asp-for="RelToIns" class="form-control" placeholder="Birth date" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" asp-for="RelToIns" class="form-control" placeholder="Степень родства" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-group">
+        <label>Валидность полиса</label>
+    </div>
+    <div class="form-group">
+        <iframe src="http://172.30.59.78/ApdMain/Default.aspx?Size=Menu" width="985" height="500"></iframe>
+    </div>
+    <div class="form-group">
+        <input type="checkbox" class="form-check-input" asp-for="Citizenship" id="Citizenship">
+        <label class="form-check-label" for="Citizenship">Гражданство или вид на жительство(check if YES)</label>
+    </div>
+    <div class="form-group">
+        <label>Адрес</label>
+        <input type="text" asp-for="Adress" class="form-control" placeholder="115682 Moscow ..." />
+    </div>
+    <div class="form-group">
+        <label>Сроки поездки</label>
+        <table>
+            <tr>
+                <td><input type="date" asp-for="VacationDate" class="form-control" placeholder="Дата начала поездки" /></td>
+                <td><input type="date" asp-for="VacationDate" class="form-control" placeholder="Дата окончания поездки" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <label>Email</label>
+        <div class="col-md-4">
+            <label>Email</label>
+            <input type="date" asp-for="VacationDate" class="form-control" placeholder="Дата начала поездки" />
+        </div>
+        <div class="col-md-4">
+            <label>Email</label>
+            <input type="date" asp-for="VacationDate" class="form-control" placeholder="Дата начала поездки" />
+        </div>
+    </div>
+    <div class="form-control">
+        <label>E-mail</label>
+        <input type="email" asp-for="Email" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Далее</button>
+</form>
