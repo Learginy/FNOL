@@ -19,7 +19,7 @@ namespace Firsrt_Call_form.Models
         public string Adress { get; set; }
 
         public DateTime Vstart { get; set; }
-        public DateTime   { get; set; }
+        public DateTime   { get; set; } vggjgh
 
     public string Email { get; set; }
     }  
